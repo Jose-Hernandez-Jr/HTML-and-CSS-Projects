@@ -1,12 +1,46 @@
+/* html{
+    margin: 0%;
+} */
+
+
 body{
-    margin: 0px;
     background-color: turquoise;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
 }
 
+h1 {
+    display: flex;
+    flex-direction: row;
+    padding: 55px;
+    text-align: center;
+}
+
+.menu-container ul {
+    width: 100px;
+    padding: 50px;
+}
+
+.nav-bar li {
+    width: ;
+}
+
 img {
     width: 250px;
+}
+
+.saftey-video{
+    text-align: center;
+}
+
+.contact{
+    display: flexbox;
+    text-align: center;
+    padding: 50px;
+}
+
+.contact label{
+    font-weight: bold;
 }
 
 input[type=text] {
@@ -16,4 +50,15 @@ input[type=text] {
     border-radius: 15px;
     margin: 8px 0;
     box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 125px;
+    border: 75px;
+    border-radius: 20px;
+    font-weight: 900;
+}
+
+footer{
+    text-align: center;
 }
