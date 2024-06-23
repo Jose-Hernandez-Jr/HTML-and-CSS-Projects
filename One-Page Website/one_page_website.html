@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Airsoft</title>
     <link rel="stylesheet" href="css/one_page_website.css">
+    <script src="JS/one_page_website.js"></script>
 </head>
 <body>
     <!-- NAV BAR -->
@@ -28,27 +29,93 @@
     <!-- HOME END -->
     <!-- GALLERY -->
     <section id="gallery">
-        <div class="photo-container">
-            <div class="photos">
-                <img src="images/Airsoft_AR.jpg" alt="Airsoft AR">
+        <div class="row">
+            <div class="column">
+                <img src="images/Airsoft_AR.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="Airsoft AR">
             </div>
-            <div class="photos">
-                <img src="images/Airsoft_SUB.jpg" alt="Airsoft SUB">
+            <div class="column">
+                <img src="images/Airsoft_SUB.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" alt="Airsoft SUB">
             </div>
-            <div class="photos">
-                <img src="images/Airsoft_LMG.jpg" alt="Airsoft LMG">
+            <div class="column">
+                <img src="images/Airsoft_LMG.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" alt="Airsoft LMG">
             </div>
-            <div class="photos">
-                <img src="images/Airsoft_Sniper.jpg" alt="Airsoft Sniper">
+            <div class="column">
+                <img src="images/Airsoft_Sniper.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow" alt="Airsoft Sniper">
             </div>
-            <div class="photos">
-                <img src="images/Airsoft_Pistol.jpg" alt="Airsoft Pistol ">
+            <div class="column">
+                <img src="images/Airsoft_Pistol.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow" alt="Airsoft Pistol ">
             </div>
-            <div class="photos">
-                <img src="images/Airsoft_Gear.jpg" alt="Airsoft Gear ">
+            <div class="column">
+                <img src="images/Airsoft_Gear.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow" alt="Airsoft Gear ">
             </div>
-            <div class=" saftey-photo">
-                <img src="images/Airsoft_Saftey.jpg" alt="Airsoft Saftey ">
+            <div class="column">
+                <img src="images/Airsoft_Saftey.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow" alt="Airsoft Saftey ">
+            </div>
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 7</div>
+                        <img src="images/Airsoft_AR.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 7</div>
+                        <img src="images/Airsoft_SUB.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 7</div>
+                        <img src="images/Airsoft_LMG.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 7</div>
+                        <img src="images/Airsoft_Sniper.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">5 / 7</div>
+                        <img src="images/Airsoft_Pistol.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">6 / 7</div>
+                        <img src="images/Airsoft_Gear.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">7 / 7</div>
+                        <img src="images/Airsoft_Saftey.jpg" style="width:100%">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    
+                    <div class="caption-container">
+                        <p id="caption">Airsoft</p>
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="images/Airsoft_AR.jpg" onclick="currentSlide(1)" alt="AR">
+                    </div>
+                
+                    <div class="column">
+                        <img class="demo" src="images/Airsoft_SUB.jpg" onclick="currentSlide(2)" alt="SUB">
+                    </div>
+                
+                    <div class="column">
+                        <img class="demo" src="images/Airsoft_LMG.jpg" onclick="currentSlide(3)" alt="LMG">
+                    </div>
+                
+                    <div class="column">
+                        <img class="demo" src="images/Airsoft_Sniper.jpg" onclick="currentSlide(4)" alt="Sniper">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo" src="images/Airsoft_Pistol.jpg" onclick="currentSlide(5)" alt="Pistol">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo" src="images/Airsoft_Gear.jpg" onclick="currentSlide(6)" alt="Gear">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo" src="images/Airsoft_Saftey.jpg" onclick="currentSlide(6)" alt="Saftey">
+                    </div>
+                </div>
             </div>
             <div class="saftey-video">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/C2Z-vREPA2k?si=KAmknPRUC-wqpimK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
